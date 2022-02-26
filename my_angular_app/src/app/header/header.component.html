@@ -1,0 +1,31 @@
+<div class="container">
+        
+       <table class="table table-striped" id="my_table">
+         <thead>
+             <tr>
+               <th>Id</th>
+               <th>Name</th>
+               <th>Username</th>
+               <th>Email</th>
+               <th>Address</th>
+               <th>Phone</th>
+               <th>Website</th>
+               <th>Company</th>
+               <th>Hide Row</th>
+             </tr>
+         </thead>
+         <tbody>
+           <tr *ngFor="let user of Users">
+             <td>{{ user.id }}</td>
+             <td>{{ user.name }}</td>
+             <td>{{ user.username }}</td>
+             <td>{{ user.email }}</td>
+             <td>{{ user.address.city }}</td>
+             <td>{{ user.phone }}</td>
+             <td>{{ user.website }}</td>
+             <td>{{ user.company.name }}</td>
+             <td><button id="remove" (click)="deleteRow(user)">Hide</button></td>
+           </tr>
+         </tbody>
+       </table>
+     </div>
