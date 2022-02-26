@@ -1,0 +1,35 @@
+p{
+    margin-top:5px;
+    color: black;
+    font-size: 15px;
+    text-align: left;
+}
+
+.border{
+    border: 1px solid black;
+    margin: 25px 25px;
+}
+
+button{
+    background: red;
+    color: white;
+}
+
+img{
+    height: 250px;
+    width: 250px;
+}
+
+.header
+{
+    width: 100%;
+    background: darkmagenta;
+    color: white;
+    position: fixed;
+    top: 0;
+}
+
+.table-con
+{
+ margin: 30px;
+}

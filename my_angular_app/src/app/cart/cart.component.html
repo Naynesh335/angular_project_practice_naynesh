@@ -1,0 +1,18 @@
+<div class="header">
+    <button type="button">Total Pay ${{total_pay}}</button>
+</div>
+
+
+
+<div class="container" >
+    <div class="row">
+      <div class="col-3 border" *ngFor="let product of products">
+        <div class="row"><img src="{{product.imgs}}"></div>
+        <div class="row"><p><b>{{product.p_name}}</b></p>
+          <p>Quantity Avilable: {{product.qunt_avl}}</p>
+          <p>Manufacture Loction: {{product.manu_loc}}</p>
+          <p [ngStyle]="{background:'green'}">Quantity Add: {{product.add}}<span style="margin-left:50px">Pay  ${{product.cost}}</span></p>
+          <button type="button" (click)="sendProduct(product.id-1)">${{product.price}}  Buy Now</button></div>
+      </div>
+    </div>
+  </div>
