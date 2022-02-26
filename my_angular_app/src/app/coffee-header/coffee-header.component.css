@@ -1,0 +1,17 @@
+
+.header {
+    background: lightseagreen;
+    width: 100%;
+    position: fixed; 
+    padding: 10px;
+}
+
+.header-container {
+    text-align: right;
+   
+}
+a {
+    padding: 5px 5px 0px 10px;
+    color: white;
+    text-decoration: none;
+}
