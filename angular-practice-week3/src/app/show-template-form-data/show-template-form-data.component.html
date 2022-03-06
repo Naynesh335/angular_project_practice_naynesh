@@ -1,0 +1,28 @@
+<p>show-template-form-data works!</p>
+<div class="container">
+        
+    <table class="table table-striped" id="my_table">
+      <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last NAme</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of Info.userdata">
+            <td>{{ user.fname }}</td>
+            <td>{{ user.lname }}</td>
+            <td>{{ user.email }}</td>
+          <td>{{ user.address1 }}</td>
+          <td>{{ user.city }}</td>
+          <td>{{ user.state }}</td>
+          <td>{{ user.zip }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
